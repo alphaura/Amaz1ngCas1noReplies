@@ -1,0 +1,59 @@
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #6E7070;
+  color: white;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  width: 85%;
+  max-width: 1500px;
+}
+
+button {
+  background-color: #0D3745;
+  color: white;
+  font-size: 1.3rem;
+  padding: 3rem 4rem;
+  width: 40%;
+  transition: 0.1s ease-in-out;
+  line-height: 2rem;
+}
+
+button:active {
+  background-color: black;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container__row {
+  display: flex;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+section h3 {
+  text-align: center;
+  margin: 5% auto 5%;
+  font-size: 1.5rem;
+  background-color: black;
+  padding: 1% 0;
+  border-radius: 50px;
+  width: 20%;
+}
+
+.welcome .row, .bonus .row, .settledbets .row, .denied .row, .close .row {
+  display: flex;
+  justify-content: space-around;
+}
