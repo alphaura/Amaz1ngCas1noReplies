@@ -13,7 +13,7 @@ body {
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   width: 85%;
-  max-width: 1500px;
+/*  max-width: 1500px;*/
 }
 
 button {
@@ -38,6 +38,14 @@ button:hover {
   display: flex;
 }
 
+.mobileflex1 {
+    display: flex;
+}
+
+.mobileflex1 > div {
+    flex: 1 1;
+}
+
 header {
   text-align: center;
   padding-bottom: 3rem;
@@ -45,15 +53,70 @@ header {
 
 section h3 {
   text-align: center;
-  margin: 5% auto 5%;
-  font-size: 1.5rem;
+  margin: 5% auto;
+  font-size: 1.05rem;
   background-color: black;
-  padding: 1% 0;
+  padding: 2rem;
   border-radius: 50px;
-  width: 20%;
+  width: 30%;
 }
 
 .welcome .row, .bonus .row, .settledbets .row, .denied .row, .close .row {
   display: flex;
   justify-content: space-around;
 }
+
+
+@media ( max-width: 1780px ) {
+    .container__row {
+        display: block;
+    }
+    
+    .welcome .row, .bonus .row, .settledbets .row, .denied .row, .close .row {
+        display: block;
+    }
+    
+    button {
+        display: block;
+        width: 100%;
+        margin-bottom: 2rem;
+        font-size: 1.3rem;
+    }
+    
+    section h3 {
+        font-size: .8rem;
+        width: 50%;
+        padding: 1rem;
+    }
+    
+    .mobileflex1 {
+        display: flex;
+    }
+    
+    .mobileflex1 > div {
+        flex: 1 1;
+    }
+    
+    .bonus, .denied {
+        margin-left: 2rem;
+    }
+}
+
+@media ( max-width: 550px ) {
+    section h3 {
+        font-size: .8rem;
+    }
+    
+     
+    button {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
