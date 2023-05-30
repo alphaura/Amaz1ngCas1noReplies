@@ -1,141 +1,109 @@
 /* CSS Document */
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
 *, *::before, *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-
 body {
-  background-color: #6E7070;
-  color: white;
-  margin: 0 auto;
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
-  width: 85%;
-/*  max-width: 1500px;*/
+    background-color: #6E7070;
+    color: white;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    width: 85%;
+    /*  max-width: 1500px;*/
 }
-
 nav {
-  background: black;
-  padding: .5rem;
-  border-radius: 20rem 0;
-  position: sticky;
-  top: 0;
+    background: black;
+    padding: .5rem;
+    border-radius: 20rem 0;
+    position: sticky;
+    top: 0;
+    display: none;
 }
-
 ul {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
 }
-
-ul li a{
-  text-decoration: none;
-  color: white;
+ul li a {
+    text-decoration: none;
+    color: white;
 }
-
 button {
-  background-color: #0D3745;
-  color: white;
-  font-size: 1.3rem;
-  padding: 3rem 4rem;
-  width: 40%;
-  transition: 0.1s ease-in-out;
-  line-height: 2rem;
+    background-color: #0D3745;
+    color: white;
+    font-size: 1.3rem;
+    padding: 3rem 4rem;
+    width: 40%;
+    transition: 0.1s ease-in-out;
+    line-height: 2rem;
 }
-
 button:active {
-  background-color: black;
+    background-color: black;
 }
-
 button:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
-
 .container__row {
-  display: flex;
+    display: flex;
 }
-
 .mobileflex1 {
     display: flex;
 }
-
 .mobileflex1 > div {
     flex: 1 1;
 }
-
 header {
-  text-align: center;
-  padding-bottom: 3rem;
+    text-align: center;
+    padding-bottom: 3rem;
 }
-
 section h3 {
-  text-align: center;
-  margin: 5% auto;
-  font-size: 1.05rem;
-  background-color: black;
-  padding: 2rem;
-  border-radius: 50px;
-  width: 30%;
+    text-align: center;
+    margin: 5% auto;
+    font-size: 1.05rem;
+    background-color: black;
+    padding: 2rem;
+    border-radius: 50px;
+    width: 30%;
 }
-
 .welcome .row, .bonus .row, .settledbets .row, .denied .row, .close .row {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
-
-
-@media ( max-width: 1780px ) {
+@media (max-width: 1780px) {
+    nav {}
     .container__row {
         display: block;
     }
-    
     .welcome .row, .bonus .row, .settledbets .row, .denied .row, .close .row {
         display: block;
     }
-    
     button {
         display: block;
         width: 100%;
         margin-bottom: 2rem;
         font-size: 1.3rem;
     }
-    
     section h3 {
         font-size: .8rem;
         width: 50%;
         padding: 1rem;
     }
-    
     .mobileflex1 {
         display: flex;
     }
-    
     .mobileflex1 > div {
         flex: 1 1;
     }
-    
     .bonus, .denied {
         margin-left: 2rem;
     }
 }
-
-@media ( max-width: 550px ) {
+@media (max-width: 550px) {
     section h3 {
         font-size: .8rem;
     }
-    
-     
     button {
         font-size: 1rem;
     }
 }
-
-
-
-
-
-
-
-
