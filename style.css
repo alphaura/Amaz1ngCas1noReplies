@@ -16,6 +16,25 @@ body {
 /*  max-width: 1500px;*/
 }
 
+nav {
+  background: black;
+  padding: .5rem;
+  border-radius: 20rem 0;
+  position: sticky;
+  top: 0;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+ul li a{
+  text-decoration: none;
+  color: white;
+}
+
 button {
   background-color: #0D3745;
   color: white;
