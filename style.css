@@ -17,7 +17,7 @@ nav {
     border-radius: 20rem 0;
     position: sticky;
     top: 0;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
     z-index: 999999; 
 }
 ul {
@@ -32,8 +32,8 @@ ul li a {
 button {
     background-color: #0D3745;
     color: white;
-    font-size: 1.3rem;
-    padding: 3rem 4rem;
+    font-size: 1rem;
+    padding: 2rem 2rem;
     width: 40%;
     transition: 0.1s ease-in-out;
     line-height: 2rem;
@@ -62,7 +62,7 @@ section h3 {
     margin: 5% auto;
     font-size: 1.05rem;
     background-color: black;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 50px;
     width: 30%;
 }
@@ -72,6 +72,10 @@ section h3 {
 }
 @media (max-width: 1780px) {
 
+  nav {
+    font-size: .8rem;
+  }
+  
     .container__row {
         display: block;
     }
@@ -82,11 +86,13 @@ section h3 {
         display: block;
         width: 100%;
         margin-bottom: 2rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
+        padding: 1rem 2rem;
+
     }
     section h3 {
-        font-size: .9rem;
-        width: 55%;
+        font-size: .8rem;
+        width: 60%;
         padding: 1rem;
     }
     .mobileflex1 {
@@ -101,9 +107,11 @@ section h3 {
 }
 @media (max-width: 550px) {
     section h3 {
-        font-size: .8rem;
+      font-size: .7rem;
+      width: 70%; 
     }
     button {
-        font-size: 1rem;
+      font-size: .8rem;
+      line-height: 1.2rem
     }
 }
